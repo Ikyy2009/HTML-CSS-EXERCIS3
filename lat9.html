@@ -1,0 +1,199 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 9 - The &lt;div&gt; Element</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }.exercise {
+  margin-bottom: 40px;
+}
+
+.red-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.green-circle {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.border-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: fit-content;
+}
+
+.border-box p {
+  margin-bottom: 10px;
+}
+
+.border-box button {
+  margin-right: 10px;
+}
+
+.music-box {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  width: 300px;
+}
+
+.music-box p {
+  margin: 5px 0;
+}
+
+.friend-card {
+  display: inline-block;
+  width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-right: 10px;
+  vertical-align: top;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.friend-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.friend-info {
+  padding: 10px;
+}
+
+.friend-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.mutual {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.friend-button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tweet-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tweet-box input {
+  border: none;
+  flex: 1;
+  padding: 8px;
+}
+
+.tweet-box button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+}
+
+.google-logo {
+  margin-bottom: 10px;
+}
+
+.google-logo img {
+  width: 200px;
+}
+
+.search-box {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 400px;
+  font-size: 16px;
+}
+
+.google-buttons button {
+  padding: 10px 15px;
+  margin: 10px 5px 0;
+}
+
+  </style>
+</head>
+<body>
+  <!-- 9a -->
+  <div class="exercise red-square"></div>  <!-- 9b -->  <div class="exercise green-circle"></div>  <!-- 9c -->  <div class="exercise border-box">
+    <p>Satisfied with our service?</p>
+    <button>Yes</button>
+    <button>No</button>
+  </div>  <!-- 9d -->  <div class="exercise music-box">
+    <p><strong>Install YouTube Music</strong></p>
+    <p>Add YouTube Music to your desktop for quick and easy access</p>
+  </div>  <!-- 9e -->  <div class="exercise">
+    <div class="tweet-box">
+      <input type="text" placeholder="What's happening?" />
+      <button>Tweet</button>
+    </div>
+  </div>  <!-- 9f & 9g -->  <div class="exercise">
+    <div class="friend-card">
+      <img src="Cat1.jpg" alt="Oliver">
+      <div class="friend-info">
+        <div class="friend-name">Oliver</div>
+        <div class="mutual">2 mutual friends</div>
+        <button class="friend-button">Add Friend</button>
+      </div>
+    </div><div class="friend-card">
+  <img src="Cat2.jpg" alt="Mimi">
+  <div class="friend-info">
+    <div class="friend-name">Mimi</div>
+    <div class="mutual">3 mutual friends</div>
+    <button class="friend-button">Add Friend</button>
+  </div>
+</div>
+
+<div class="friend-card">
+  <img src="Cat-pilot.jpeg" alt="Rex">
+  <div class="friend-info">
+    <div class="friend-name">Rex</div>
+    <div class="mutual">4 mutual friends</div>
+    <button class="friend-button">Add Friend</button>
+  </div>
+</div>
+
+  </div>  <!-- 9h -->  <div class="exercise centered">
+    <div class="google-logo">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+    </div>
+    <div>
+      <input type="text" class="search-box" placeholder="Search Google or type a URL" />
+    </div>
+    <div class="google-buttons">
+      <button>Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exercises</title>
+    <style>
+
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    color: red;
+}
+
+.pagination {
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.pagination button, .pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px;
+    border: 1px solid gray;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+.stretch-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.stretch {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.click-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.shadow {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.shadow:active {
+    box-shadow: 2px 2px 5px gray;
+    transform: translateY(2px);
+}
+
+.margin-padding-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.margin-padding-container button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+    <h2>Challenge Exercises</h2>
+    <p>Recreate the designs below using the Box Model:</p>
+
+    <!-- 4h. Pagination -->
+    <div class="pagination">
+        <button>Back</button>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <button>Next</button>
+    </div>
+
+    <!-- 4i. Stretch -->
+    <div class="stretch-container">
+        <button class="stretch">Stretch</button>
+    </div>
+
+    <!-- 4j. 3D Click -->
+    <div class="click-container">
+        <button class="shadow">Shadow</button>
+    </div>
+
+    <!-- 4k. Margin and Padding Together -->
+    <div class="margin-padding-container">
+        <button>One</button>
+        <button>Two</button>
+        <button>Three</button>
+    </div>
+   
+
+
+
+</body>
+</html>

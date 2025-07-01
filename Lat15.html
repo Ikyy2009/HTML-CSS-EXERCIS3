@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 15 - Absolute and Relative</title>
+  <style>
+    body {
+      height: 3000px;
+      font-family: Arial;
+      margin: 0;
+      background-color: #f4f4f4;
+    }/* 15a */
+.close-btn-15a {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 15b */
+.box-15b {
+  position: fixed;
+  width: 320px;
+  height: 180px;
+  background-color: #ccc;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 15c */
+.box-15c {
+  position: fixed;
+  width: 320px;
+  height: 180px;
+  background-color: #aaa;
+  bottom: 240px;
+  right: 20px;
+}
+.box-15c .close-btn {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+/* 15d */
+.box-15d {
+  position: fixed;
+  width: 320px;
+  height: 180px;
+  background-color: #888;
+  bottom: 460px;
+  right: 20px;
+  position: fixed;
+}
+.box-15d .close-btn {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+}
+.box-15d .timestamp {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+/* 15e & 15f */
+.product-container {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  margin: 40px 20px;
+}
+.product-container img {
+  width: 100%;
+  display: block;
+}
+.discount {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: black;
+  color: white;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+.add-to-cart {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+  </style>
+</head>
+<body>  <!-- 15a -->  <div class="close-btn-15a">X</div>  <!-- 15b -->  <div class="box-15b"></div>  <!-- 15c -->  <div class="box-15c">
+    <div class="close-btn">X</div>
+  </div>  <!-- 15d -->  <div class="box-15d">
+    <div class="close-btn">X</div>
+    <div class="timestamp">0:29</div>
+  </div>  <!-- 15e -->  <div class="product-container">
+    <img src="Tshirt.jpeg" alt="shirt">
+    <div class="discount">20% OFF</div>
+  </div>  <!-- 15f -->  <div class="product-container">
+    <img src="Tshirt2.jpeg" alt="shirt">
+    <div class="discount">20% OFF</div>
+    <div class="add-to-cart">Add to Cart</div>
+  </div></body>
+</html>

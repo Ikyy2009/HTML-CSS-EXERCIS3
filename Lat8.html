@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 8 - Block and Inline-Block</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }.exercise {
+  margin-bottom: 40px;
+}
+
+/* 8a */
+.input-block input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+/* 8b */
+.inline-container {
+  display: flex;
+  align-items: center;
+}
+
+.inline-text {
+  display: inline-block;
+  width: 300px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.inline-buttons button {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 6px 12px;
+}
+
+/* 8c */
+.google-search {
+  margin-top: 30px;
+}
+
+.google-logo {
+  margin-bottom: 10px;
+}
+
+.google-logo img {
+  width: 200px;
+}
+
+.search-box {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 400px;
+  font-size: 16px;
+}
+
+/* 8d */
+.signup-form input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form .input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.signup-form button {
+  background-color: #1877f2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 8e */
+.uber-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+}
+
+.uber-form h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.uber-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.uber-buttons button {
+  padding: 10px 15px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.request-now {
+  background-color: black;
+  color: white;
+}
+
+.schedule-later {
+  background-color: #eee;
+}
+
+  </style>
+</head>
+<body>
+  <div class="exercise input-block">
+    <h3>8a. Two input boxes on separate lines</h3>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+  </div>  <div class="exercise">
+    <h3>8b. Paragraph and buttons in one line</h3>
+    <div class="inline-container">
+      <div class="inline-text">
+        Thanks for chatting with our customer support. Would you like to take our quick survey?
+      </div>
+      <div class="inline-buttons">
+        <button>Yes</button>
+        <button>No</button>
+      </div>
+    </div>
+  </div>  <div class="exercise google-search">
+    <h3>8c. Google search form</h3>
+    <div class="google-logo">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo" />
+    </div>
+    <input type="text" class="search-box" placeholder="Search Google or type a URL" />
+  </div>  <div class="exercise signup-form">
+    <h3>8d. Sign up form</h3>
+    <div class="input-row">
+      <input type="text" placeholder="First name" />
+      <input type="text" placeholder="First name" />
+    </div>
+    <div>
+      <input type="email" placeholder="Email" />
+    </div>
+    <br />
+    <button>Sign Up</button>
+  </div>  <div class="exercise uber-form">
+    <h3>8e. Uber request-a-ride form</h3>
+    <h2>Request a ride now</h2>
+    <input type="text" placeholder="Enter pickup location" />
+    <input type="text" placeholder="Enter destination" />
+    <div class="uber-buttons">
+      <button class="request-now">Request now</button>
+      <button class="schedule-later">Schedule for later</button>
+    </div>
+  </div>
+</body>
+</html>

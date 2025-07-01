@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11 Exercises - CSS Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        .exercise {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        .exercise-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        /* Exercise 11a */
+        .grid-11a {
+            display: grid;
+            grid-template-columns: 200px 75px;
+            margin-bottom: 20px;
+        }
+        
+        .grid-11a div {
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        
+        /* Exercise 11b */
+        .grid-11b {
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+            margin-bottom: 20px;
+        }
+        
+        .grid-11b div {
+            background-color: lightpink;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        
+        /* Exercise 11c */
+        .grid-11c {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px 20px;
+            row-gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .grid-11c div {
+            background-color: lightgreen;
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        
+        /* Exercise 11d */
+        .grid-11d {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .grid-11d div {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 11 Exercises - CSS Grid</h1>
+    
+    <div class="exercise">
+        <div class="exercise-title">11a. Create a grid with 2 columns with widths of 200px and 75px</div>
+        <div class="grid-11a">
+            <div>200px</div>
+            <div>75px</div>
+        </div>
+    </div>
+    
+    <div class="exercise">
+        <div class="exercise-title">11b. Create a grid with 3 columns. Widths = 50px | remaining space | 75px</div>
+        <div class="grid-11b">
+            <div>50px</div>
+            <div>Remaining space</div>
+            <div>75px</div>
+        </div>
+    </div>
+    
+    <div class="exercise">
+        <div class="exercise-title">11c. Create a grid with 4 equal columns that take up the entire page. Space between columns = 20px, space between rows = 10px</div>
+        <div class="grid-11c">
+            <div>col1</div>
+            <div>col2</div>
+            <div>col3</div>
+            <div>col4</div>
+            <div>col1</div>
+            <div>col2</div>
+            <div>col3</div>
+            <div>col4</div>
+        </div>
+    </div>
+    
+    <div class="exercise">
+        <div class="exercise-title">11d. Create a grid with 3 columns and put the elements into the Grid. Align items vertically center.</div>
+        <div class="grid-11d">
+            <div>Item 1</div>
+            <div>Item 2 with more content to show vertical alignment</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+        </div>
+    </div>
+</body>
+</html>

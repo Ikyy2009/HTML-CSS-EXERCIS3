@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 14 - Position Fixed</title>
+  <style>
+    body {
+      height: 3000px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }/* 14a */
+.bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+/* 14b */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+/* 14c */
+.overlay-black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+}
+
+/* 14d */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 14e */
+.fb-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.fb-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fb-user {
+  display: flex;
+  align-items: center;
+}
+
+/* 14f */
+.discord-sidebar {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  background-color: #2c2f33;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discord-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.discord-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.discord-info {
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- 14a -->
+  <div class="bottom-right">bottom-right</div>  <!-- 14b -->  <div class="sidebar">right sidebar</div>  <!-- 14c -->  <!-- <div class="overlay-black"></div> -->  <!-- 14d -->  <!-- Modal shown on overlay -->  <!-- <div class="modal-overlay">
+    <div class="modal">
+      <h2>Modal Title</h2>
+      <p>This is a modal</p>
+      <button>Close</button>
+    </div>
+  </div> -->  <!-- 14e -->  <div class="fb-header">
+    <div class="fb-user">
+      <img src="download (5).jpeg" alt="Oliver" />
+      <span>Oliver Cat</span>
+    </div>
+    <div>
+      <button>Add Friend</button>
+      <button>Message</button>
+    </div>
+  </div>  <!-- 14f -->  <div class="discord-sidebar">
+    <div class="discord-user">
+      <img src="Cat-pilot.jpeg" alt="Oliver" />
+      Oliver
+    </div>
+    <div class="discord-user">
+      <img src="Cat2.jpg" alt="Mimi" />
+      Mimi
+    </div>
+    <div class="discord-user">
+      <img src="SIGMA CAT.jpeg" alt="Rex" />
+      Rex
+    </div>
+    <div class="discord-info">
+      <p># new-videos</p>
+      <p># updates</p>
+      <p># faq</p>
+    </div>
+  </div>
+</body>
+</html>

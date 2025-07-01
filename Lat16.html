@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }.video-card {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.thumbnail {
+  width: 250px;
+  position: relative;
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: black;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.video-info {
+  display: flex;
+  gap: 10px;
+}
+
+.channel-pic {
+  position: relative;
+  display: inline-block;
+}
+
+.channel-pic img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  padding: 10px;
+  display: none;
+  width: 220px;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.channel-pic:hover .tooltip {
+  display: block;
+}
+
+.tooltip img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tooltip .name {
+  font-weight: bold;
+}
+
+.tooltip .subs {
+  font-size: 13px;
+  color: gray;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.video-title a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>  <!-- 16a, 16b, 16c, 16d -->  <div class="video-card">
+    <!-- Thumbnail as link (16c) -->
+    <a href="https://youtu.be/9tucY7Jhhs4" class="thumbnail">
+      <img src="mr beast youtube video thumbnail.jpeg" alt="Video Thumbnail">
+      <div class="duration">14:20</div>
+    </a><div class="video-info">
+  <!-- Channel Picture with Tooltip (16d) -->
+  <div class="channel-pic">
+    <img src="MrBeast Profile Picture.jpeg" alt="Channel Picture">
+    <div class="tooltip">
+      <div style="display: flex; align-items: center;">
+        <img src="MrBeast Profile Picture.jpeg" alt="Profile">
+        <div>
+          <div class="name">MrBeast</div>
+          <div class="subs">3.4M subscribers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-details">
+    <!-- Title link (16b) -->
+    <div class="video-title"><a href="https://youtu.be/48h57PspBec?si=bJCIarfeura-lQen">Kapal Pesiar $1 vs Kapal Pesiar $1,000,000,000!</a></div>
+    <div>MrBeast</div>
+    <div>3.4M views • 6 months ago</div>
+  </div>
+</div>
+
+  </div></body>
+</html>

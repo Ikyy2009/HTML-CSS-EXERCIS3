@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+        }
+        .images, .textboxes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        img {
+            width: 200px;
+            height: auto;
+        }
+        .rounded {
+            border-radius: 15px;
+        }
+        .square {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .rounded-input {
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+        .shadow-input {
+            border: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            width: 250px;
+        }
+        .linkedin {
+            width: 300px;
+            display: block;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }
+        .linkedin button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .twitter {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 25px;
+            margin: auto;
+        }
+        .twitter img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .tweet-btn {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Latihan CSS: Gambar dan Text Box</h2>
+
+        <div class="images">
+            <div>
+                <h3>7a. sebuah kucing</h3>
+                <img src="Cat1.jpg" class="rounded" alt="Kucing">
+            </div>
+            <div>
+                <h3>7b. sebuah kucing</h3>
+                <img src="Cat2.jpg" class="square" alt="Kucing">
+            </div>
+            <div>
+                <h3>7c. sebuah penguin</h3>
+                <img src="gambar1.jpg" class="circle" alt="Kucing">
+            </div>
+        </div>
+
+        <div class="textboxes">
+            <div>
+                <h3>7d. Textbox dengan Sudut Melengkung</h3>
+                <input type="text" class="rounded-input" placeholder="Search">
+            </div>
+            <div>
+                <h3>7e. Textbox dengan Bayangan</h3>
+                <input type="text" class="shadow-input" placeholder="Search Google or type a URL">
+            </div>
+        </div>
+
+        <h2>Challenge Exercises</h2>
+
+        <div class="linkedin">
+            <h3>7f. LinkedIn Signup</h3>
+            <input type="email" placeholder="Email">
+            <button>Agree & Join</button>
+        </div>  
+    </div>
+</body>
+</html>

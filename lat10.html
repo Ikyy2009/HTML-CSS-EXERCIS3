@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10 Layouts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }/* General Styles */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.profile-row, .video-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.profile-info, .video-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info img, .video-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.video-thumb {
+  width: 150px;
+  height: 90px;
+  border-radius: 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 14px;
+  color: gray;
+}
+
+.follow-button, .friend-button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.friend-card {
+  display: inline-block;
+  width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.friend-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.friend-info {
+  padding: 10px;
+}
+
+.friend-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.mutual {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.video-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+  </style>
+</head>
+<body>  <!-- 10a -->  <div class="card">
+    <div class="profile-row">
+      <div class="profile-info">
+        <img src="download (2).jpeg" alt="Oliver">
+        <div class="text-container">
+          <div class="name">oliver</div>
+          <div class="desc">the cat</div>
+          <div class="desc">Popular</div>
+        </div>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+  </div>  <!-- 10b -->  <div class="card">
+    <div class="profile-row">
+      <div class="profile-info">
+        <img src="download (3).jpeg" alt="Oliver">
+        <div class="text-container">
+          <div class="name">oliver</div>
+          <div class="desc">the cat</div>
+          <div class="desc">Popular</div>
+        </div>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+    <div class="profile-row">
+      <div class="profile-info">
+        <img src="download (5).jpeg" alt="Mimi">
+        <div class="text-container">
+          <div class="name">Mimi</div>
+          <div class="desc">Sleepy Cat</div>
+          <div class="desc">Popular</div>
+        </div>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+    <div class="profile-row">
+      <div class="profile-info">
+        <img src="download (3).jpeg" alt="Rex">
+        <div class="text-container">
+          <div class="name">Rex</div>
+          <div class="desc">Happy Bulldog</div>
+          <div class="desc">Popular</div>
+        </div>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+  </div>  <!-- 10c -->  <div class="card">
+    <div class="video-row">
+      <img class="video-thumb" src="Black and White PC Wallpaper 4K.jpeg" alt="Self Taught">
+      <div class="video-column">
+        <div class="video-title">How to compete against CS degrees (as a self-taught dev)</div>
+        <div class="desc">SuperSimpleDev</div>
+        <div class="desc">1.5K views • 4 months ago</div>
+      </div>
+    </div>
+    <div class="video-row">
+      <img class="video-thumb" src="thesamurai.jpeg" alt="Which Language">
+      <div class="video-column">
+        <div class="video-title">Which programming language to learn first 2022 (with charts)</div>
+        <div class="desc">SuperSimpleDev</div>
+        <div class="desc">5.7K views • 11 months ago</div>
+      </div>
+    </div>
+    <div class="video-row">
+      <img class="video-thumb" src="download (6).jpeg" alt="Frontend">
+      <div class="video-column">
+        <div class="video-title">Frontend web development - a complete overview (2021)</div>
+        <div class="desc">SuperSimpleDev</div>
+        <div class="desc">1K views • 4 months ago</div>
+      </div>
+    </div>
+  </div>  <!-- 10d -->  <div class="card">
+    <div class="friend-card">
+      <img src="SIGMA CAT.jpeg" alt="Oliver">
+      <div class="friend-info">
+        <div class="friend-name">Oliver</div>
+        <div class="mutual">2 mutual friends</div>
+        <button class="friend-button">Add Friend</button>
+      </div>
+    </div><div class="friend-card">
+  <img src="download (4).jpeg" alt="Mimi">
+  <div class="friend-info">
+    <div class="friend-name">Mimi</div>
+    <div class="mutual">3 mutual friends</div>
+    <button class="friend-button">Add Friend</button>
+  </div>
+</div>
+
+<div class="friend-card">
+  <img src="Cat-pilot.jpeg" alt="Rex">
+  <div class="friend-info">
+    <div class="friend-name">Rex</div>
+    <div class="mutual">4 mutual friends</div>
+    <button class="friend-button">Add Friend</button>
+  </div>
+</div>
+
+  </div></body>
+</html>
